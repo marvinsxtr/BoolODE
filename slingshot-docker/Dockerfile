@@ -35,8 +35,8 @@ RUN apt-get install -y libssl-dev libcurl4-openssl-dev libgsl-dev\
 ##############
 ## Install R
 RUN echo "deb http://cran.rstudio.com/bin/linux/ubuntu xenial-cran35/" | tee -a /etc/apt/sources.list && \
-    gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9 && \
-    gpg -a --export E084DAB9 | apt-key add - && \
+    gpg --keyserver keyserver.ubuntu.com --recv-key 95C0FAF38DB3CCAD0C080A7BDC78B2DDEABC47B7 && \
+    gpg -a --export 95C0FAF38DB3CCAD0C080A7BDC78B2DDEABC47B7 | apt-key add - && \
     apt-get update && \ 
     apt-get install -y r-recommended=${R_VERSION} && \
     apt-get install -y r-base=${R_VERSION}
