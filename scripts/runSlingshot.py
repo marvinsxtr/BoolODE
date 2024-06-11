@@ -216,9 +216,6 @@ def computeSSPT(ExpDF, ptDF, nClust, outPaths, noEnd = False, perplexity = 500):
         plt.savefig(outPaths+"/SlingshotOutput.png")
     if sys.platform.startswith("linux"):
         os.system("rm -rf temp/")
-    elif sys.platform.startswith("win"):
-        print("yay")
-        #os.system('rmdir /S /Q "temp"')
 
 def main(args):
     opts, args = parseArgs(args)
