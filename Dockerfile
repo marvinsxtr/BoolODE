@@ -14,7 +14,7 @@ COPY --from=ghcr.io/astral-sh/uv:0.5.4@sha256:49934a7a2d0a2ddfda9ddb566d6ac2449c
 ADD . /app
 ENV PYTHONPATH=$PYTHONPATH:/app
 WORKDIR /app
-RUN uv pip install .
+RUN uv sync --frozen
 
 # Entrypoint
 ENTRYPOINT ["uv", "run", "-m", "BoolODE"]
