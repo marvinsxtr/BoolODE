@@ -4,4 +4,4 @@ ADD . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
 
-ENTRYPOINT ["python", "src/BoolODE.py"]
+ENTRYPOINT ["python", "/app/src/BoolODE.py"]
