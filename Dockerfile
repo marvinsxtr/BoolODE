@@ -1,6 +1,7 @@
 FROM python:3.7
 
-ADD . /app
+RUN mkdir /app && chmod 777 /app
+COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
 
