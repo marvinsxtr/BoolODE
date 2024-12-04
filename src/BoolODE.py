@@ -644,7 +644,7 @@ def simulateAndSample(argdict):
             
 
     # write to file
-    df.to_csv(outPrefix + 'E'+ str(cellid) + '.csv')
+    # df.to_csv(outPrefix + 'E'+ str(cellid) + '.csv')
 
     
 def Experiment(Model, ModelSpec,tspan,
