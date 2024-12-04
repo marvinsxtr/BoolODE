@@ -22,6 +22,8 @@ import simulator
 np.seterr(all='raise')
 import os
 
+sys.setrecursionlimit(10000)
+
 def readBooleanRules(path, parameterInputsPath, outPrefix='',
                      add_dummy=False, max_parents=1):
     """
